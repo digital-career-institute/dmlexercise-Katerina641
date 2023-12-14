@@ -51,4 +51,22 @@ Write a query to retrieve the **names an prices** of all products with a stock l
 Write a query to retrieve the **names and prices** of all products with a price greater than $100 and a stock less than 30.
 
 > ANSWER  
+CREATE DATABASE Shop;
+use Shop;
+CREATE TABLE Product(id INT,name VARCHAR(100),price DECIMAL(2),stock INT, PRIMARY KEY(id));
+INSERT INTO Product(id,name,price) VALUES(1,'Laptop', 25.2);
+INSERT INTO Product(id,name,price) VALUES(2,'Smartphone', 33.2);
+SELECT name,price FROM Product;
+SELECT price FROM Product WHERE price>26;
+SELECT name,price FROM Product WHERE stock>0;
+UPDATE Product SET stock = 10 WHERE name='Laptop';
+Describe Product;
+select * FROM Product;
+SELECT name,price FROM Product WHERE stock>0;
+SELECT name,price FROM Product WHERE stock>5 and price>20;
+
+
+
+
+
 
