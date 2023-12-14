@@ -49,4 +49,18 @@ Write a query to retrieve the names and ages of all students.
 Write a query to retrieve the names and grade of all students with a grade higher than 80.
 
 > ANSWER  
+CREATE DATABASE exercise;
+use exercise;
+CREATE TABLE Students(id INT, name VARCHAR(50), age INT, grade INT, PR
+INSERT INTO Students(id,name,age,grade) VALUES(2,'Pit',25,10);IMARY KEY(id));
+ALTER TABLE Students ADD adress VARCHAR(50);
+UPDATE Students SET adress='Odesa' WHERE id=2;
+UPDATE Students SET age='21' WHERE name='Pit';
+DELETE FROM Students WHERE id=1;
+select name,age FROM Students;
+SELECT name, grade FROM Students WHERE grade>9;
+INSERT INTO Students(id,name,age,grade) VALUES(1,'John',20,85);
+SELECT name, grade FROM Students WHERE grade>9;
+
+INSERT INTO Students(id,name,age,grade) VALUES(1,'John',20,85);
 
