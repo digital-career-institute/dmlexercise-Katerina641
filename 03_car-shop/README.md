@@ -64,5 +64,23 @@ Update the prices of all 'Honda' cars to $28000.00.
 Delete all cars made in 2021.
 
 > ANSWER
+> DELETE FROM Cars WHERE car_id=1;
+> 
+CREATE DATABASE exercise_car_shop;
+use exercise_car_shop;
+CREATE TABLE Cars(car_id INT PRIMARY KEY, make VARCHAR(50),model VARCHAR(50),year INT, price DECIMAL(2));
+INSERT INTO Cars(car_id,make,model,year,price) VALUES (1, 'Toyota', 'Camry', 2022, 2.0);
+INSERT INTO Cars(car_id,make,model,year,price) VALUES (2, 'Honda', 'Accord', 2021, 27.50);
+Describe Cars;
+SELECT FROM * Cars;
+select * FROM Cars;
+UPDATE Cars SET price=30 WHERE model='Camry';
+select * FROM Cars;
+UPDATE Cars SET price=price/5 WHERE year>2021;
+select * FROM Cars;
+DELETE FROM Cars WHERE car_id=1;
+DELETE FROM Cars WHERE car_id=1;
+DELETE FROM Cars WHERE price>100;
+UPDATE Cars SET price=5 WHERE make='Honda';
 
 
